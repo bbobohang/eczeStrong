@@ -9,19 +9,7 @@ import {
 	updateProfile,
 } from 'firebase/auth';
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-
-const firebaseConfig = {
-	apiKey: 'AIzaSyBYYPzj9tZJGOB2cpc-NwM8kvvwFUdNwJU',
-	authDomain: 'alvinezapp.firebaseapp.com',
-	projectId: 'alvinezapp',
-	storageBucket: 'alvinezapp.appspot.com',
-	messagingSenderId: '553317760484',
-	appId: '1:553317760484:web:23983069646f00c387dbf1',
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const auth = getAuth();
+import { app, auth, db } from '../../firebase';
 
 const register = (navigation, name, email, password, imageURL) => () => {
 	console.log('hello');
@@ -97,6 +85,12 @@ const Register = ({ navigation, setLogin, Login }) => {
 					onPress={register(navigation, name, email, password)}
 				>
 					<Text style={styles.btnText}>Register</Text>
+				</TouchableOpacity>
+				<TouchableOpacity
+					style={styles.btn}
+					onPress={() => navigation.replace('Login')}
+				>
+					<Text style={styles.btnText}>Login</Text>
 				</TouchableOpacity>
 			</View>
 		</View>

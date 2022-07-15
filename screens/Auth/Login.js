@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { Input } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { auth } from '../../firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import ChatScreen from '../Chat/ChatScreen';
 
-const Login = ({ navigation, setLogin, login }) => {
+const login = (email, password, navigation) => () => {
+	signInWithEmailAndPassword(auth, email, password)
+		.then((userCredential) => {
+			// Signed in
+			const user = userCredential.user;
+			navigation.replace('ChatScreen');
+			// ...
+		})
+		.catch((error) => {
+			const errorCode = error.code;
+			const errorMessage = error.message;
+		});
+};
+const Login = ({ navigation }) => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
+
 	return (
 		<View style={{ alignItems: 'center', padding: 20 }}>
 			<Text>Login to your account</Text>
@@ -26,12 +43,15 @@ const Login = ({ navigation, setLogin, login }) => {
 			/>
 
 			<View style={{}}>
-				<TouchableOpacity style={styles.btn}>
+				<TouchableOpacity
+					style={styles.btn}
+					onPress={login(email, password, navigation)}
+				>
 					<Text style={styles.btnText}>Login</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
 					style={styles.btn}
-					onPress={() => navigation.navigate('Register')}
+					onPress={() => navigation.replace('Register')}
 				>
 					<Text style={styles.btnText}>Register</Text>
 				</TouchableOpacity>
