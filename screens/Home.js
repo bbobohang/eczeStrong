@@ -8,7 +8,14 @@ import {
 	Image,
 	TouchableOpacity,
 } from 'react-native';
-import { MaterialCommunityIcons, Entypo, Ionicons } from '@expo/vector-icons';
+import {
+	MaterialCommunityIcons,
+	Entypo,
+	Ionicons,
+	FontAwesome,
+	FontAwesome5,
+	SimpleLineIcons,
+} from '@expo/vector-icons';
 
 export default function Home({ navigation }) {
 	return (
@@ -43,7 +50,7 @@ export default function Home({ navigation }) {
 				<View style={styles.itemList}>
 					<View style={styles.itemCtn}>
 						<View style={styles.iconCtn}>
-							<MaterialCommunityIcons name='hand-coin' size={70} />
+							<FontAwesome name='dollar' size={60} color='#2A6049' />
 						</View>
 						<View style={{ flex: 4, flexDirection: 'column' }}>
 							<View style={styles.textCtn}>
@@ -64,12 +71,12 @@ export default function Home({ navigation }) {
 				<View style={styles.itemList}>
 					<View style={styles.itemCtn}>
 						<View style={styles.iconCtn}>
-							<MaterialCommunityIcons name='hand-coin' size={70} />
+							<SimpleLineIcons name='speech' size={60} color='#2A6049' />
 						</View>
 						<View style={{ flex: 4, flexDirection: 'column' }}>
 							<View style={styles.textCtn}>
-								<Text style={styles.title}>Tips and Advices on Daily Activities</Text>
-								<Text style={styles.subtitle}>Advices that actually helps </Text>
+								<Text style={styles.title}>Tips and Advices </Text>
+								<Text style={styles.subtitle}>Advices for daily activites </Text>
 							</View>
 						</View>
 						<View style={{ flex: 1, justifyContent: 'center' }}>
@@ -85,7 +92,7 @@ export default function Home({ navigation }) {
 				<View style={styles.itemList}>
 					<View style={styles.itemCtn}>
 						<View style={styles.iconCtn}>
-							<MaterialCommunityIcons name='hand-coin' size={70} />
+							<FontAwesome5 name='user-friends' size={50} color='#2A6049' />
 						</View>
 						<View style={{ flex: 4, flexDirection: 'column' }}>
 							<View style={styles.textCtn}>
@@ -106,7 +113,7 @@ export default function Home({ navigation }) {
 				<View style={styles.itemList}>
 					<View style={styles.itemCtn}>
 						<View style={styles.iconCtn}>
-							<MaterialCommunityIcons name='hand-coin' size={70} />
+							<FontAwesome5 name='hands-helping' size={50} color='#2A6049' />
 						</View>
 						<View style={{ flex: 4, flexDirection: 'column' }}>
 							<View style={styles.textCtn}>
@@ -159,10 +166,12 @@ const styles = StyleSheet.create({
 		fontWeight: '400',
 		fontSize: 14,
 		color: '#a9a9a9',
+		paddingLeft: 5,
 	},
 	title: {
 		fontWeight: '600',
 		fontSize: 18,
+		paddingRight: 5,
 	},
 	goBtn: {
 		borderRadius: 30,

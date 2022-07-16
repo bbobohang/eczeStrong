@@ -11,7 +11,11 @@ const login = (email, password, navigation) => () => {
 		.then((userCredential) => {
 			// Signed in
 			const user = userCredential.user;
-			navigation.replace('ChatScreen');
+			if (user.displayName === 'admin') {
+				navigation.replace('ChatScreenAdmin');
+			} else {
+				navigation.replace('ChatScreen');
+			}
 			// ...
 		})
 		.catch((error) => {

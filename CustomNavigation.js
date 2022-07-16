@@ -15,6 +15,7 @@ import Register from './screens/Auth/Register';
 import Quotes from './screens/Home/Cost/Advices/Quotes';
 import ChatScreen from './screens/Chat/ChatScreen';
 import Login from './screens/Auth/Login';
+import ChatScreenAdmin from './screens/Chat/ChatScreenAdmin';
 
 const Stack = createStackNavigator();
 
@@ -47,7 +48,13 @@ const HomeScreenNavigator = () => {
 					title: 'Tips and Advices',
 				}}
 			/>
-			<Stack.Screen name='LivingPage' component={LivingPage} />
+			<Stack.Screen
+				name='LivingPage'
+				component={LivingPage}
+				options={{
+					headerShown: false,
+				}}
+			/>
 			<Stack.Screen
 				name='MentalPage'
 				component={MentalPage}
@@ -80,11 +87,8 @@ const ChatScreenNavigator = () => {
 					title: 'Back to Login',
 				}}
 			/>
-			<Stack.Screen
-				name='ChatScreen'
-				component={ChatScreen}
-				options={{ headerShown: false }}
-			/>
+			<Stack.Screen name='ChatScreen' component={ChatScreen} />
+			<Stack.Screen name='ChatScreenAdmin' component={ChatScreenAdmin} />
 			<Stack.Screen name='Login' component={Login} />
 		</Stack.Navigator>
 	);
