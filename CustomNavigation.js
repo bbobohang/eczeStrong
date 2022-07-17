@@ -16,6 +16,7 @@ import Quotes from './screens/Home/Cost/Advices/Quotes';
 import ChatScreen from './screens/Chat/ChatScreen';
 import Login from './screens/Auth/Login';
 import ChatScreenAdmin from './screens/Chat/ChatScreenAdmin';
+import Laundry from './screens/Home/Cost/Advices/Laundry';
 
 const Stack = createStackNavigator();
 
@@ -23,11 +24,13 @@ const HomeScreenNavigator = () => {
 	return (
 		<Stack.Navigator
 			screenOptions={{
+				headerShown: false,
 				headerStyle: {
 					backgroundColor: '#2A6049',
 				},
 				headerTintColor: '#fff',
 			}}
+			id='HomeScreenNavigator'
 		>
 			<Stack.Screen
 				name='Home'
@@ -65,6 +68,7 @@ const HomeScreenNavigator = () => {
 			<Stack.Screen name='RelatedMedPage' component={RelatedMedPage} />
 			<Stack.Screen name='OtherAdvicesPage' component={OtherAdvicesPage} />
 			<Stack.Screen name='Bathing' component={Bathing} />
+			<Stack.Screen name='Laundry' component={Laundry} />
 			<Stack.Screen name='Quotes' component={Quotes} />
 		</Stack.Navigator>
 	);
@@ -81,15 +85,22 @@ const ChatScreenNavigator = () => {
 			}}
 		>
 			<Stack.Screen
+				name='Login'
+				component={Login}
+				options={{
+					headerShown: false,
+				}}
+			/>
+
+			<Stack.Screen name='ChatScreen' component={ChatScreen} />
+			<Stack.Screen name='ChatScreenAdmin' component={ChatScreenAdmin} />
+			<Stack.Screen
 				name='Register'
 				component={Register}
 				options={{
-					title: 'Back to Login',
+					headerShown: false,
 				}}
 			/>
-			<Stack.Screen name='ChatScreen' component={ChatScreen} />
-			<Stack.Screen name='ChatScreenAdmin' component={ChatScreenAdmin} />
-			<Stack.Screen name='Login' component={Login} />
 		</Stack.Navigator>
 	);
 };

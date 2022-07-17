@@ -11,7 +11,7 @@ const linkedPages = [
 	},
 	{
 		name: 'Laundry Practices',
-		href: 'RelatedMedPage',
+		href: 'Laundry',
 		icon: 'washing-machine',
 	},
 	{
@@ -22,21 +22,24 @@ const linkedPages = [
 	{
 		name: 'Management of symptoms ',
 		href: 'RelatedMedPage',
-		icon: 'bookshelf',
+		icon: 'checkbox-marked',
 	},
 	{
 		name: 'Daily Quotes',
 		href: 'Quotes',
-		icon: 'bookshelf',
+		icon: 'chat',
 	},
 ];
 const OtherAdvicesPage = ({ navigation }) => {
 	return (
-		<View style={{ flex: 1, flexDirection: 'column' }}>
-			{linkedPages.map((item, index) => (
-				<ListItem key={index} item={item} navigation={navigation} />
-			))}
-		</View>
+		<>
+			<View style={{ height: 50 }} />
+			<View style={{ flex: 1, flexDirection: 'column' }}>
+				{linkedPages.map((item, index) => (
+					<ListItem key={index} item={item} navigation={navigation} />
+				))}
+			</View>
+		</>
 	);
 };
 

@@ -12,9 +12,6 @@ import * as Animatable from 'react-native-animatable';
 import Collapsible from 'react-native-collapsible';
 import Accordion from 'react-native-collapsible/Accordion';
 
-const BACON_IPSUM =
-	'Bacon ipsum dolor amet chuck turducken landjaeger tongue spare ribs. Picanha beef prosciutto meatball turkey shoulder shank salami cupim doner jowl pork belly cow. Chicken shankle rump swine tail frankfurter meatloaf ground round flank ham hock tongue shank andouille boudin brisket. ';
-
 const CONTENT = [
 	{
 		title: 'Take charge of conversations',
@@ -32,12 +29,12 @@ const CONTENT = [
 			'“Put yourself in their shoes”! Imagine what they might be going through and try to understand their feelings. This will help to better understand their perspective and eventually help you to respond appropriately.',
 	},
 	{
-		title: 'Encourage others to talk about themselves.',
+		title: 'Encourage others to talk about themselves',
 		content:
 			'Most people really enjoy talking about themselves. Ask questions about a person’s lifestyle, such as career, hobbies, or family. Show interest in hearing what is being said!',
 	},
 	{
-		title: 'Identify and replace negative thoughts. ',
+		title: 'Identify and replace negative thoughts',
 		content:
 			'Identify negative thoughts that are likely to drag you down and replace them with more realistic ones. Don’t allow yourself to dwell on thoughts that are not productive!. ',
 	},
@@ -86,14 +83,14 @@ export default class LivingPage extends Component {
 
 	render() {
 		const { multipleSelect, activeSections, activeSections2 } = this.state;
-
+		const navigation = this.props.navigation;
 		return (
 			<View style={styles.container}>
 				<ScrollView contentContainerStyle={{ paddingTop: 30 }}>
 					<Text style={styles.title}>Welcome to Meet a Friend!</Text>
 					<Text style={styles.content}>
-						This is to improve the social behaviour of the sufferers by providing
-						opportunities for them to interact with one another
+						This platform is to help improve the social behaviour of the sufferers by
+						providing opportunities for them to interact with one another!
 					</Text>
 					<TouchableOpacity onPress={this.toggleExpanded}>
 						<View style={styles.header}>
@@ -110,14 +107,14 @@ export default class LivingPage extends Component {
 							>
 								Social skills are verbal and nonverbal tools used to communicate,
 								interact and build healthy relationships. It is often defined as a set
-								of behaviours that allow an individual to relate to others in an
-								effective and satisfactory way. This includes forming and fostering
-								relationships, explaining, communicating, active listening, networking
-								and many more. One interesting aspect about social skills is that they
-								can be learned, strengthened, and developed daily with practice! → in a
-								bubble or something idk {'\n'}
+								of behaviours allowing an individual to relate to others effectively and
+								satisfactorily. This includes forming and fostering relationships,
+								explaining, communicating, active listening, networking and many more.{' '}
 								{'\n'}
-								“Social skills are a fundamental pillar in any scenario.” by Professor
+								{'\n'}One interesting aspect about social skills is that they can be
+								learned, strengthened, and developed daily with practice! {'\n'}
+								{'\n'}
+								“Social skills are a fundamental pillar in any scenario.” - Professor
 								David Deming, doctor in education and economics, Harvard University.
 							</Animatable.Text>
 						</View>
@@ -146,14 +143,37 @@ export default class LivingPage extends Component {
 						onChange={this.setSections}
 						renderAsFlatList={false}
 					/>
+					<Text style={{ textAlign: 'justify', padding: 20, marginTop: 20 }}>
+						“Good social skills are essential for all aspects of life, especially
+						effective communication! If you find socialising with others challenging,
+						Remember, great social skills do not come easily. You have to practice and
+						really step out of your comfort zone! You got this!”
+					</Text>
+					<Text
+						style={{
+							textAlign: 'center',
+							padding: 20,
+							marginTop: 20,
+							fontSize: 22,
+							fontWeight: '300',
+						}}
+					>
+						Want to try these tips by talking with others?
+					</Text>
 					<View
 						style={{
 							alignItems: 'center',
-							height: 200,
+							height: 100,
 							justifyContent: 'center',
 						}}
 					>
-						<TouchableOpacity style={styles.btn}>
+						<TouchableOpacity
+							style={styles.btn}
+							onPress={() => {
+								const parentNav = navigation.getParent();
+								parentNav.navigate('Login');
+							}}
+						>
 							<View>
 								<Text style={styles.btnText}>Click Here to go to Chat!</Text>
 							</View>
@@ -189,7 +209,7 @@ const styles = StyleSheet.create({
 	content: {
 		padding: 20,
 		backgroundColor: '#fff',
-		textAlign: 'center',
+		textAlign: 'justify',
 	},
 	active: {
 		backgroundColor: 'white',
@@ -228,7 +248,7 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		alignItem: 'center',
 		width: '60%',
-		height: '30%',
+		height: '70%',
 		borderWidth: 1,
 		borderColor: 'white',
 		borderRadius: 10,

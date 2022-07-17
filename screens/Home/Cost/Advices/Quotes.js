@@ -20,6 +20,7 @@ const Quotes = ({ route }) => {
 	};
 	return (
 		<View style={styles.container}>
+			<View style={{ height: 100 }} />
 			<View
 				style={{
 					flex: 3,
