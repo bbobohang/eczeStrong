@@ -1,6 +1,9 @@
 # eczeStrong
 eczeStrong is an React-Native application that aims to help Eczema patients alleviate their mental and physical sufferings
 
+## Application Usage
+Live application demo can be found [here](https://expo.dev/@bobohang/AlvinApp)
+
 ## Base dependencies
 - [expo](https://expo.dev/) for rapid development of React-Native App
 - [firebase](https://firebase.google.com/) for backend authentication and live chat function
