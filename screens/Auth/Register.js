@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { Input } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { initializeApp } from 'firebase/app';
@@ -12,7 +12,6 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 import { app, auth, db } from '../../firebase';
 
 const register = (navigation, name, email, password, imageURL) => () => {
-	console.log('hello');
 	createUserWithEmailAndPassword(auth, email, password)
 		.then((userCredential) => {
 			// Signed in
@@ -29,15 +28,27 @@ const register = (navigation, name, email, password, imageURL) => () => {
 					navigation.navigate('ChatScreen');
 				})
 				.catch((error) => {
-					// An error occurred
-					// ...
+					const errorCode = error.code;
+					const errorMessage = error.message;
+					Alert.alert(errorMessage);
 				});
 		})
 		.catch((error) => {
 			const errorCode = error.code;
 			const errorMessage = error.message;
-			console.log(errorMessage);
-			// ..
+			if (errorCode === 'auth/invalid-email') {
+				Alert.alert('Invalid Credentials');
+			}
+
+			if (errorCode === 'auth/internal-error') {
+				Alert.alert('Invalid email/password');
+			}
+			if (errorCode === 'auth/email-already-in-use') {
+				Alert.alert('Email already in use');
+			}
+			if (errorCode === 'auth/weak-password') {
+				Alert.alert('Password needs to be at least 6 characters long');
+			}
 		});
 };
 const Register = ({ navigation, setLogin, Login }) => {
@@ -48,7 +59,19 @@ const Register = ({ navigation, setLogin, Login }) => {
 
 	return (
 		<View style={{ alignItems: 'center', padding: 20 }}>
-			<Text>Register an account</Text>
+			<View style={{ height: 100 }}>
+				<Text
+					style={{
+						textAlign: 'center',
+						fontSize: 22,
+						fontWeight: '300',
+						marginBottom: 20,
+						marginTop: 40,
+					}}
+				>
+					Register an account
+				</Text>
+			</View>
 			<Input
 				label='Name'
 				leftIcon={<Icon name='lock' size={24} color='black' />}

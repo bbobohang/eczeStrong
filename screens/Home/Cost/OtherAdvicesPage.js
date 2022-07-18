@@ -16,12 +16,12 @@ const linkedPages = [
 	},
 	{
 		name: 'Sleep Cycle ',
-		href: 'RelatedMedPage',
+		href: 'Sleep',
 		icon: 'coolant-temperature',
 	},
 	{
 		name: 'Management of symptoms ',
-		href: 'RelatedMedPage',
+		href: 'Management',
 		icon: 'checkbox-marked',
 	},
 	{

@@ -19,45 +19,7 @@ const HappyPage = ({ route, navigation }) => {
 			setSlide(QUOTES.length - 1);
 		}
 	};
-	return (
-		// <View style={styles.container}>
-		// 	<View
-		// 		style={{
-		// 			flex: 3,
-		// 			justifyContent: 'flex-start',
-		// 			padding: 15,
-		// 		}}
-		// 	>
-		// 		<Image
-		// 			source={QUOTES[slide].imgSrc}
-		// 			style={styles.image}
-		// 			resizeMode='contain'
-		// 		/>
-		// 	</View>
-		// 	<View style={{ flex: 1, flexDirection: 'row' }}>
-		// 		<View style={styles.button}>
-		// 			<EvilIcons
-		// 				name='arrow-left'
-		// 				size={80}
-		// 				onPress={() => handlePress('dec')}
-		// 				color='black'
-		// 			/>
-		// 		</View>
-		// 		<View style={styles.button}>
-		// 			<EvilIcons name='share-apple' size={80} color='black' />
-		// 		</View>
-		// 		<View style={styles.button}>
-		// 			<EvilIcons
-		// 				name='arrow-right'
-		// 				size={80}
-		// 				onPress={() => handlePress('inc')}
-		// 				color='black'
-		// 			/>
-		// 		</View>
-		// 	</View>
-		// </View>
-		<OtherAdvicesPage navigation={navigation} />
-	);
+	return <OtherAdvicesPage navigation={navigation} />;
 };
 
 export default HappyPage;

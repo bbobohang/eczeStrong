@@ -14,45 +14,60 @@ import Accordion from 'react-native-collapsible/Accordion';
 
 const CONTENT = [
 	{
-		title: 'Always run new clothes through the wash',
+		title: 'Adjust your thermostat ',
 		content: (
 			<Text>
-				Many new clothing articles have finishing sprays and chemicals that can be
-				highly irritating! {'\n'}
-				{'\n'}Play it safe by washing new clothing with a double rinse cycle before
-				wearing it!
-			</Text>
-		),
-	},
-	{
-		title: 'Do not overload the machine! ',
-		content: (
-			<Text>
-				Loading the washer with the right amount of clothing can allow the laundry
-				detergent to dissolve evenly. {'\n'}
-				{'\n'}This would prevent ineffective cleaning or even having residual
-				detergent on the clothing, which would become a potential flare-ups
-			</Text>
-		),
-	},
-	{
-		title: 'Let the rinse cycle run',
-		content: (
-			<Text>
-				Let the detergents rinse away from your clothes to avoid potential contact
-				with your skin. You can even consider double-rinse if required!
-			</Text>
-		),
-	},
-	{
-		title: 'Skip fabric softeners and dryer sheets ',
-		content: (
-			<Text>
-				Fabric softener and dry sheets are usually fragranced, and this could
-				trigger eczema. {'\n'}
+				Keeping the environment temperature levels low may be able to reduce the
+				severity of the eczema symptoms. {'\n'}
+				{'\n'}Body temperature and eczema are closely related. The warmer the
+				environment, the worse the condition tends to be. Many people wake up in the
+				middle of the night as their body overheats and the eczema-related itching
+				worsens.
 				{'\n'}
-				Moreover, these products introduce more chemicals that could potentially be
-				allergic to.
+				{'\n'}However, theres no universal temperature that is best for everyone.
+				You may have to try different temperatures to identify the one that's the
+				most comfortable for you!
+			</Text>
+		),
+	},
+	{
+		title: 'Reduce night-time scratching',
+		content: (
+			<Text>
+				Many people unintentionally scratch their eczema patches at night. To reduce
+				the risk of scratching and making the condition worse. Keep your nails
+				trimmed and neat!
+				{'\n'}
+				{'\n'}You can even consider wearing soft cotton gloves at night to cover
+				your fingernails if required!
+			</Text>
+		),
+	},
+	{
+		title: 'Practice good sleep hygiene',
+		content: (
+			<Text>
+				Stick to regular bedtime and wake-up time every day. This trains your body
+				to go to sleep and stay asleep smoothing. {'\n'}
+				{'\n'}Engage in relaxation techniques about an hour before going to bed.
+				Examples include meditating, taking a bath, listening to soothing music or
+				reading a book{'\n'}
+				{'\n'}Avoid eating heavy meals, drinking caffeine, or smoking before going
+				to bed. These habits are all associated with disrupting sleep.
+			</Text>
+		),
+	},
+	{
+		title: 'Choose appropriate sleepwear ',
+		content: (
+			<Text>
+				The clothes worn to sleep can affect the quality of rest. Do not wear
+				anything made of fabric that’s too rough, scratchy, or tight. {'\n'}
+				{'\n'}
+				Also, ensure you wear appropriate clothing depending on how hot or cold it
+				is to avoid sweating.{'\n'}
+				{'\n'}It preferred to go for airy, loose and breathable fabrics that absorb
+				moisture.
 			</Text>
 		),
 	},
@@ -105,21 +120,20 @@ export default class Laundry extends Component {
 		return (
 			<View style={styles.container}>
 				<ScrollView contentContainerStyle={{ paddingTop: 30 }}>
-					<Text style={styles.title}>Laundry Practices</Text>
+					<Text style={styles.title}>Sleep Cycle</Text>
 
 					<View style={{ height: 200 }}>
 						<Image
-							source={require('../../../../assets/laundry.jpg')}
+							source={require('../../../assets/sleep.jpg')}
 							style={styles.image}
 							resizeMode='contain'
 						/>
 					</View>
 
 					<Text style={styles.content}>
-						“Everyone’s skin is different, an irritant for you may not have an effect
-						on someone else. A little trial and error may be necessary to learn what
-						works best for your skin! Follow these tips to make sure you are doing
-						your laundry practices in an eczema-friendly way!”
+						“ A good night’s sleep does not have to elude you when you have severe
+						eczema. Here are some tips you can try to catch more sleep and have a
+						better sleep quality!”
 					</Text>
 
 					<Accordion

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { QUOTES } from '../../../../data/quotes/quotes';
+import { QUOTES } from '../../../data/quotes/quotes';
 import { AntDesign, EvilIcons, Entypo } from '@expo/vector-icons';
 
 const Quotes = ({ route }) => {
@@ -43,9 +43,7 @@ const Quotes = ({ route }) => {
 						color='black'
 					/>
 				</View>
-				<View style={styles.button}>
-					<EvilIcons name='share-apple' size={80} color='black' />
-				</View>
+
 				<View style={styles.button}>
 					<EvilIcons
 						name='arrow-right'

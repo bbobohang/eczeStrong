@@ -5,19 +5,20 @@ import CostPage from './screens/Home/CostPage';
 import Home from './screens/Home';
 import HappyPage from './screens/Home/HappyPage';
 import LivingPage from './screens/Home/LivingPage';
-import MentalPage from './screens/Home/MentalPage';
+import AdditionalSupport from './screens/Home/AdditionalSupport';
 
 import RelatedMedPage from './screens/Home/Cost/RelatedMedPage';
 import OtherAdvicesPage from './screens/Home/Cost/OtherAdvicesPage';
 
-import Bathing from './screens/Home/Cost/Advices/Bathing';
+import Bathing from './screens/Home/Advices/Bathing';
 import Register from './screens/Auth/Register';
-import Quotes from './screens/Home/Cost/Advices/Quotes';
+import Quotes from './screens/Home/Advices/Quotes';
 import ChatScreen from './screens/Chat/ChatScreen';
 import Login from './screens/Auth/Login';
 import ChatScreenAdmin from './screens/Chat/ChatScreenAdmin';
-import Laundry from './screens/Home/Cost/Advices/Laundry';
-
+import Laundry from './screens/Home/Advices/Laundry';
+import Sleep from './screens/Home/Advices/Sleep';
+import Management from './screens/Home/Advices/Management';
 const Stack = createStackNavigator();
 
 const HomeScreenNavigator = () => {
@@ -59,8 +60,8 @@ const HomeScreenNavigator = () => {
 				}}
 			/>
 			<Stack.Screen
-				name='MentalPage'
-				component={MentalPage}
+				name='AdditionalSupport'
+				component={AdditionalSupport}
 				options={{
 					title: 'Mental Wellness',
 				}}
@@ -69,6 +70,8 @@ const HomeScreenNavigator = () => {
 			<Stack.Screen name='OtherAdvicesPage' component={OtherAdvicesPage} />
 			<Stack.Screen name='Bathing' component={Bathing} />
 			<Stack.Screen name='Laundry' component={Laundry} />
+			<Stack.Screen name='Sleep' component={Sleep} />
+			<Stack.Screen name='Management' component={Management} />
 			<Stack.Screen name='Quotes' component={Quotes} />
 		</Stack.Navigator>
 	);
@@ -92,7 +95,13 @@ const ChatScreenNavigator = () => {
 				}}
 			/>
 
-			<Stack.Screen name='ChatScreen' component={ChatScreen} />
+			<Stack.Screen
+				name='ChatScreen'
+				component={ChatScreen}
+				options={{
+					headerTitle: 'Welcome to Chat',
+				}}
+			/>
 			<Stack.Screen name='ChatScreenAdmin' component={ChatScreenAdmin} />
 			<Stack.Screen
 				name='Register'

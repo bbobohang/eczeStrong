@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import { Input } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { auth } from '../../firebase';
@@ -21,15 +21,35 @@ const login = (email, password, navigation) => () => {
 		.catch((error) => {
 			const errorCode = error.code;
 			const errorMessage = error.message;
+			if (errorCode === 'auth/invalid-email') {
+				Alert.alert('Invalid Credentials');
+			}
+
+			if (errorCode === 'auth/wrong-password') {
+				Alert.alert('Invalid email/password');
+			}
 		});
 };
 const Login = ({ navigation }) => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
+	const [error, setError] = useState('');
 
 	return (
 		<View style={{ alignItems: 'center', padding: 20 }}>
-			<Text>Login to your account</Text>
+			<View style={{ height: 100 }}>
+				<Text
+					style={{
+						textAlign: 'center',
+						fontSize: 22,
+						fontWeight: '300',
+						marginBottom: 20,
+						marginTop: 40,
+					}}
+				>
+					Login to your account
+				</Text>
+			</View>
 			<Input
 				label='Email'
 				placeholder='Enter your email'

@@ -6,6 +6,7 @@ import {
 	Text,
 	View,
 	TouchableOpacity,
+	Image,
 } from 'react-native';
 import Constants from 'expo-constants';
 import * as Animatable from 'react-native-animatable';
@@ -14,98 +15,57 @@ import Accordion from 'react-native-collapsible/Accordion';
 
 const CONTENT = [
 	{
-		title: 'Bathing tips in atopic dermatitis',
+		title: 'Embrace the condition!',
 		content: (
-			<View
-				style={{
-					width: 350,
-					display: 'flex',
-				}}
-			>
-				<View style={{ alignItems: 'flex-start' }}>
-					<Text>
-						{'\u2022'}Bath in warm water and not hot or cold water{'\n'}
-						{'\uFE63'}Hot water can increase the itch response{'\n'}
-					</Text>
-				</View>
-				<View style={{}}>
-					<Text>
-						{'\u2022'}Limit the bath to 5 or 10 minutes{'\n'}
-						{'\uFE63'}Bathing for too long can dry out the skin, making dry, cracked
-						skin worse{'\n'}
-					</Text>
-				</View>
-				<View>
-					<Text>
-						{'\u2022'}Use a mild and fragrance-free cleanser{'\n'}
-					</Text>
-				</View>
-				<View>
-					<Text>
-						{'\u2022'}Do not use bubble bath{'\n'}
-						{'\uFE63'}Soaps and detergents are also known to trigger AD flares {'\n'}
-						{'\uFE63'}Hair should not be washed in the bath, and a shampoo that is
-						unperfumed and suitable for eczema patients should be used {'\n'}
-					</Text>
-				</View>
-				<View>
-					<Text>
-						{'\u2022'}After bathing, gently pat skin dry{'\n'}
-						{'\uFE63'}Be gentle when blotting the skin dry with a towel {'\n'}
-					</Text>
-				</View>
-				<View>
-					<Text>
-						{'\u2022'}Apply moisturiser and medicine when the skin is almost dry{' '}
-						{'\n'}
-					</Text>
-				</View>
-			</View>
+			<Text>
+				Acceptance is the first step! It is essential to be honest with yourself,
+				recognising that you have eczema and fully accepting it may take a few
+				months or even years. However, this acknowledgement helps you to be
+				realistic about what it means for your physical and metal health!
+			</Text>
 		),
 	},
 	{
-		title: 'Recommended method!',
+		title: 'Connect with others who have eczema ',
 		content: (
-			<View
-				style={{
-					width: 350,
-					display: 'flex',
-				}}
-			>
-				<View
-					style={{
-						alignItems: 'flex-start',
-						alignItems: 'center',
-					}}
-				>
-					<Text style={{ fontSize: 16, fontWeight: '300' }}>
-						Soak and Seal{'\n'}
-					</Text>
-				</View>
-				<View>
-					<Text>
-						<Text>
-							Instructions: {'\n'}
-							{'\u2022'} Take a bath using lukewarm water for 5-10 minutes. Use a
-							gentle cleanser and avoid scrubbing the affected skin.{'\n'}
-							{'\u2022'} After bathing, pat the skin lightly with a towel leaving it
-							slightly damp{'\n'}
-							{'\u2022'} Apply topical medication to the affected areas of skin as
-							directed{'\n'}
-							{'\u2022'} Within 3 minutes, liberally apply a moisturizer all over the
-							body. It is important to apply the moisturizer within 3 minutes or the
-							skin may become even drier{'\n'}
-							{'\u2022'} Wait a few minutes to let the moisturizer absorb into the skin
-							before dressing or applying wet wraps.{'\n'}
-						</Text>
-					</Text>
-				</View>
-			</View>
+			<Text>
+				Eczema can feel isolating, but it’s one of the most typical skin conditions.
+				Connecting with others, such as through online support groups can help to
+				boost self-esteem, reduce feelings of isolation and learn new ways to cope
+				with living with eczema {'\n'}
+				{'\n'}
+				Connect with others using the Chat function!
+			</Text>
+		),
+	},
+	{
+		title: 'Exercising',
+		content: (
+			<Text>
+				Exercise is one of the most effective ways to tackle stress, anxiety,
+				depression and other negative emotions. Whether you prefer walking, running
+				or swimming. Exercise is believed to dramatically improve your mood.
+				However, if sweat is a trigger for your eczema, remember to take a cool or
+				lukewarm shower coon after your workout and change clothes!
+			</Text>
+		),
+	},
+	{
+		title: 'Refer to a mental health counsellor ',
+		content: (
+			<Text>
+				Never hesitate to refer to external help If you are unable to handle the
+				stress or manage the symptoms alone. Sometimes an experienced and
+				sympathetic ear is just what’s needed to bring mental balance back into
+				place! A counsellor can provide insights that will make the experience much
+				more tolerable. {'\n'}
+				{'\n'}
+			</Text>
 		),
 	},
 ];
 
-export default class Bathing extends Component {
+export default class AdditionalSupport extends Component {
 	state = {
 		activeSections: [],
 		collapsed: true,
@@ -152,12 +112,14 @@ export default class Bathing extends Component {
 		return (
 			<View style={styles.container}>
 				<ScrollView contentContainerStyle={{ paddingTop: 30 }}>
-					<Text style={styles.title}>Bathing Practices</Text>
+					<Text style={styles.title}>Additional Support</Text>
 					<Text style={styles.content}>
-						Due to the higher levels of bacteria on atopic skin, bathing and washing
-						are important to remove the bacteria from the skin. However, correct
-						bathing practices should be enforced in order to not cause any further
-						damage to the skin barriers.
+						From the red, rash-like appearance to the torturous itch and sleepless
+						night. Living with eczema can be downright challenging on our emotional
+						well-being. Anxiety and stress are common triggers that cause eczema to
+						flare up, creating more anxiety and stress. This then again leads to more
+						flare-ups. Therefore, here are some helpful tips and advice for you to
+						break this vicious cycle!
 					</Text>
 
 					<Accordion
@@ -172,29 +134,30 @@ export default class Bathing extends Component {
 						onChange={this.setSections}
 						renderAsFlatList={false}
 					/>
-
-					<Text style={styles.content}>
-						There is a significant amount of data showing that patients with atopic
-						dermatitis have impaired barrier function; hence, choosing a wash designed
-						to improve the skin barrier is helpful.
+					<Text
+						style={{
+							textAlign: 'center',
+							padding: 20,
+							marginTop: 20,
+							fontSize: 22,
+							fontWeight: '300',
+						}}
+					>
+						Scan this QR to find out more about the counselling centres and helplines!
 					</Text>
 					<View
 						style={{
 							alignItems: 'center',
-							height: 100,
+							height: 150,
 							justifyContent: 'center',
+							marginBottom: 30,
 						}}
 					>
-						<TouchableOpacity
-							style={styles.btn}
-							onPress={() => {
-								navigation.replace('CostPage');
-							}}
-						>
-							<View>
-								<Text style={styles.btnText}>Click Here to find out more!</Text>
-							</View>
-						</TouchableOpacity>
+						<Image
+							source={require('../../assets/qr.png')}
+							style={{ height: 150, width: 150 }}
+							resizeMode='contain'
+						/>
 					</View>
 				</ScrollView>
 			</View>
@@ -276,5 +239,9 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		fontWeight: '500',
 		color: 'white',
+	},
+	image: {
+		width: '100%',
+		height: '100%',
 	},
 });

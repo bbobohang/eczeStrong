@@ -3,37 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import RelatedMedPage from './Cost/RelatedMedPage';
 const CostPage = ({ navigation }) => {
 	return (
-		// <Button
-		// 	title='GO'
-		// 	onPress={() => navigation.navigate('RelatedMedPage')}
-		// 	color='#2A6049'
-		// 	style={styles.goBtn}
-		// />
 		<View style={{ flex: 1, padding: 15, backgroundColor: 'white' }}>
-			{/* <View style={{ flex: 1, position: 'relative', marginBottom: 20 }}>
-				<View style={{ flex: 1 }}>
-					<Image source={require('../../assets/pills.jpg')} style={styles.img} />
-				</View>
-				<TouchableOpacity
-					activeOpacity={0.5}
-					style={styles.photoTextCtn}
-					onPress={() => navigation.navigate('RelatedMedPage')}
-				>
-					<Text style={styles.photoText}>Alternative Medicines</Text>
-				</TouchableOpacity>
-			</View>
-			<View style={{ flex: 1 }}>
-				<View style={{ flex: 1 }}>
-					<Image source={require('../../assets/advice.jpg')} style={styles.img} />
-				</View>
-				<TouchableOpacity
-					style={styles.photoTextCtn}
-					activeOpacity={0.5}
-					onPress={() => navigation.navigate('OtherAdvicesPage')}
-				>
-					<Text style={styles.photoText}>Other Advices</Text>
-				</TouchableOpacity>
-			</View> */}
 			<RelatedMedPage />
 		</View>
 	);

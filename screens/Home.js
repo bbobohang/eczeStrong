@@ -125,7 +125,7 @@ export default function Home({ navigation }) {
 							<Button
 								title='GO'
 								color='#2A6049'
-								onPress={() => navigation.navigate('MentalPage')}
+								onPress={() => navigation.navigate('AdditionalSupport')}
 								style={styles.goBtn}
 							/>
 						</View>
