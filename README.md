@@ -5,7 +5,7 @@ eczeStrong is an React-Native application that aims to help Eczema patients alle
 Live application demo can be found [here.](https://expo.dev/@bobohang/AlvinApp)
 
 ## Screenshots
-<img src="https://user-images.githubusercontent.com/72592202/179932107-bcbef13d-4f1e-4011-8f99-e890c19fe45d.jpg" width="100"  />
+<img src="https://user-images.githubusercontent.com/72592202/179932107-bcbef13d-4f1e-4011-8f99-e890c19fe45d.jpg" width="150"  />
 ![6]( | width=100)
 ![5](https://user-images.githubusercontent.com/72592202/179932120-784ffef0-f4a9-469c-80d9-4e2c69f36d1e.jpg | width=150)
 ![4](https://user-images.githubusercontent.com/72592202/179932124-66e36222-9714-4ba9-aac4-c927fdae1d1f.jpg | width=200)
