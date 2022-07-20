@@ -6,10 +6,10 @@ Live application demo can be found [here.](https://expo.dev/@bobohang/AlvinApp)
 
 ## Screenshots
 
-![6](https://user-images.githubusercontent.com/72592202/179932107-bcbef13d-4f1e-4011-8f99-e890c19fe45d.jpg)
-![5](https://user-images.githubusercontent.com/72592202/179932120-784ffef0-f4a9-469c-80d9-4e2c69f36d1e.jpg)
-![4](https://user-images.githubusercontent.com/72592202/179932124-66e36222-9714-4ba9-aac4-c927fdae1d1f.jpg)
-![3](https://user-images.githubusercontent.com/72592202/179932127-f7c47493-75f4-40f0-9dff-6df7dafe8e0d.jpg)
+![6](https://user-images.githubusercontent.com/72592202/179932107-bcbef13d-4f1e-4011-8f99-e890c19fe45d.jpg | width=100)
+![5](https://user-images.githubusercontent.com/72592202/179932120-784ffef0-f4a9-469c-80d9-4e2c69f36d1e.jpg | width=150)
+![4](https://user-images.githubusercontent.com/72592202/179932124-66e36222-9714-4ba9-aac4-c927fdae1d1f.jpg | width=200)
+![3](https://user-images.githubusercontent.com/72592202/179932127-f7c47493-75f4-40f0-9dff-6df7dafe8e0d.jpg | width=250)
 ![2](https://user-images.githubusercontent.com/72592202/179932131-faa1779a-8d1a-4ec7-86cb-be1fdde4f471.jpg)
 ![1](https://user-images.githubusercontent.com/72592202/179932137-92c2f998-1563-4de5-a32c-2927330a21fe.jpg)
 
