@@ -33,8 +33,8 @@ const linkedPages = [
 const OtherAdvicesPage = ({ navigation }) => {
 	return (
 		<>
-			<View style={{ height: 50 }} />
-			<View style={{ flex: 1, flexDirection: 'column' }}>
+			<View style={{ height: 50, backgroundColor: 'white' }} />
+			<View style={{ flex: 1, flexDirection: 'column', backgroundColor: 'white' }}>
 				{linkedPages.map((item, index) => (
 					<ListItem key={index} item={item} navigation={navigation} />
 				))}

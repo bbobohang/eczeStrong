@@ -117,6 +117,9 @@ export default class LivingPage extends Component {
 								“Social skills are a fundamental pillar in any scenario.” - Professor
 								David Deming, doctor in education and economics, Harvard University.
 							</Animatable.Text>
+							<View
+								style={{ backgroundColor: 'black', width: '100px', height: '100px' }}
+							/>
 						</View>
 					</Collapsible>
 					<View

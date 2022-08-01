@@ -12,6 +12,7 @@ import Constants from 'expo-constants';
 import * as Animatable from 'react-native-animatable';
 import Collapsible from 'react-native-collapsible';
 import Accordion from 'react-native-collapsible/Accordion';
+import { Linking } from 'react-native';
 
 const CONTENT = [
 	{
@@ -161,11 +162,20 @@ export default class Bathing extends Component {
 							resizeMode='contain'
 						/>
 					</View>
+					<Text
+						style={styles.hyperlink}
+						onPress={() =>
+							Linking.openURL(
+								'https://www.dreamstime.com/stock-illustration-atopic-dermatitis-bathing-use-soap-application-eczema-advice-patients-eczema-steroid-creams-moisturising-emulsions-image81215517'
+							)
+						}
+					>
+						Image Link
+					</Text>
 					<Text style={styles.content}>
-						Due to the higher levels of bacteria on atopic skin, bathing and washing
-						are important to remove the bacteria from the skin. However, correct
-						bathing practices should be enforced in order to not cause any further
-						damage to the skin barriers.
+						Bathing is important to remove the higher levels of bacteria on Atopic
+						Skin. However, correct bathing practices should be enforced to not cause
+						any damage to the skin barriers.
 					</Text>
 
 					<Accordion
@@ -288,5 +298,12 @@ const styles = StyleSheet.create({
 	image: {
 		width: '100%',
 		height: '100%',
+	},
+	hyperlink: {
+		textAlign: 'center',
+		fontSize: 8,
+		fontStyle: 'italic',
+		color: 'blue',
+		textDecorationLine: 'underline',
 	},
 });

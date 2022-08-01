@@ -30,10 +30,12 @@ const Landing = ({ navigation, setLanding }) => {
 				/>
 			</View>
 			<View style={{ flex: 3, justifyContent: 'center' }}>
-				<Text style={styles.text}>Say hi to your self-care journal</Text>
+				<Text style={styles.text}>Say hi to Eczemanagement</Text>
 			</View>
 			<View style={{ flex: 1, justifyContent: 'center' }}>
-				<Text style={styles.textBody}>Your go to application for Ezcema</Text>
+				<Text style={styles.textBody}>
+					Your go to application for eczema associated problems!
+				</Text>
 			</View>
 			<View
 				style={{

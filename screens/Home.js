@@ -54,8 +54,10 @@ export default function Home({ navigation }) {
 						</View>
 						<View style={{ flex: 4, flexDirection: 'column' }}>
 							<View style={styles.textCtn}>
-								<Text style={styles.title}>Good Lobang! </Text>
-								<Text style={styles.subtitle}>Spend less earn more</Text>
+								<Text style={styles.title}>Good deals!</Text>
+								<Text style={styles.subtitle}>
+									Cheaper management medications for Eczema!
+								</Text>
 							</View>
 						</View>
 						<View style={{ flex: 1, justifyContent: 'center' }}>

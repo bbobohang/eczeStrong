@@ -116,10 +116,9 @@ export default class Laundry extends Component {
 					</View>
 
 					<Text style={styles.content}>
-						“Everyone’s skin is different, an irritant for you may not have an effect
-						on someone else. A little trial and error may be necessary to learn what
-						works best for your skin! Follow these tips to make sure you are doing
-						your laundry practices in an eczema-friendly way!”
+						“ A little trial and error may be necessary to learn what works best for
+						your skin! Follow these tips to make sure you are doing your laundry
+						practices in an eczema-friendly way!”
 					</Text>
 
 					<Accordion

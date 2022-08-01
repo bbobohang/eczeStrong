@@ -11,7 +11,7 @@ import {
 import Constants from 'expo-constants';
 import * as Animatable from 'react-native-animatable';
 import Accordion from 'react-native-collapsible/Accordion';
-
+import { Linking } from 'react-native';
 const CONTENT = [
 	{
 		title: 'Dry occlusive dressings',
@@ -28,13 +28,32 @@ const CONTENT = [
 	{
 		title: 'Wet occlusive dressings',
 		content: (
-			<View style={{ paddingLeft: 10 }}>
-				<Image
-					source={require('../../../assets/management.jpg')}
-					style={{ height: 350, width: 350 }}
-					resizeMode='contain'
-				/>
-			</View>
+			<>
+				<View style={{ paddingLeft: 10 }}>
+					<Image
+						source={require('../../../assets/management.jpg')}
+						style={{ height: 350, width: 350 }}
+						resizeMode='contain'
+					/>
+				</View>
+				<Text
+					style={{
+						paddingLeft: 10,
+						textAlign: 'center',
+						fontSize: 8,
+						fontStyle: 'italic',
+						color: 'blue',
+						textDecorationLine: 'underline',
+					}}
+					onPress={() =>
+						Linking.openURL(
+							'https://www.dreamstime.com/stock-illustration-atopic-dermatitis-bathing-use-soap-application-eczema-advice-patients-eczema-steroid-creams-moisturising-emulsions-image81215517'
+						)
+					}
+				>
+					Image Link
+				</Text>
+			</>
 		),
 	},
 ];
@@ -203,5 +222,12 @@ const styles = StyleSheet.create({
 	image: {
 		width: '100%',
 		height: '100%',
+	},
+	hyperlink: {
+		textAlign: 'center',
+		fontSize: 8,
+		fontStyle: 'italic',
+		color: 'blue',
+		textDecorationLine: 'underline',
 	},
 });

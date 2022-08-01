@@ -17,16 +17,16 @@ const CONTENT = [
 		title: 'Adjust your thermostat ',
 		content: (
 			<Text>
-				Keeping the environment temperature levels low may be able to reduce the
-				severity of the eczema symptoms. {'\n'}
-				{'\n'}Body temperature and eczema are closely related. The warmer the
-				environment, the worse the condition tends to be. Many people wake up in the
-				middle of the night as their body overheats and the eczema-related itching
-				worsens.
+				{'\u25CF'} Keeping the environment temperature levels low may be able to
+				reduce the severity of the eczema symptoms.
 				{'\n'}
-				{'\n'}However, theres no universal temperature that is best for everyone.
-				You may have to try different temperatures to identify the one that's the
-				most comfortable for you!
+				{'\n'}
+				{'\u25CF'} Body temperature and eczema are closely related. The warmer the
+				environment, the worse the condition tends to be.
+				{'\n'}
+				{'\n'}
+				{'\u25CF'} However, You have to try different temperatures to identify the
+				one that's the most comfortable for you!
 			</Text>
 		),
 	},
@@ -34,12 +34,15 @@ const CONTENT = [
 		title: 'Reduce night-time scratching',
 		content: (
 			<Text>
-				Many people unintentionally scratch their eczema patches at night. To reduce
-				the risk of scratching and making the condition worse. Keep your nails
-				trimmed and neat!
+				{'\u25CF'} Many people unintentionally scratch their eczema patches at
+				night.
 				{'\n'}
-				{'\n'}You can even consider wearing soft cotton gloves at night to cover
-				your fingernails if required!
+				{'\n'}
+				{'\u25CF'} Keep your nails short to reduce the risk of scratching and making
+				the condition worse !{'\n'}
+				{'\n'}
+				{'\u25CF'} You can even consider wearing soft cotton gloves at night to
+				cover your fingernails if required!
 			</Text>
 		),
 	},
@@ -47,13 +50,19 @@ const CONTENT = [
 		title: 'Practice good sleep hygiene',
 		content: (
 			<Text>
-				Stick to regular bedtime and wake-up time every day. This trains your body
-				to go to sleep and stay asleep smoothing. {'\n'}
-				{'\n'}Engage in relaxation techniques about an hour before going to bed.
-				Examples include meditating, taking a bath, listening to soothing music or
-				reading a book{'\n'}
-				{'\n'}Avoid eating heavy meals, drinking caffeine, or smoking before going
-				to bed. These habits are all associated with disrupting sleep.
+				{'\u25CF'} Stick to regular bedtime and wake-up time every day. This trains
+				your body to go to sleep and stay asleep smoothing. {'\n'}
+				{'\n'}
+				{'\u25CF'} Engage in relaxation techniques about an hour before going to
+				bed.{'\n'}
+				{'\n'}Examples include {'\n'}
+				{'\u25AB'}Meditating{'\n'}
+				{'\u25AB'}Taking a bath{'\n'}
+				{'\u25AB'}Listening to soothing music{'\n'}
+				{'\u25AB'}Reading a book{'\n'}
+				{'\n'}
+				{'\u25CF'} Avoid eating heavy meals, drinking caffeine, or smoking before
+				going to bed. These habits are all associated with disrupting sleep.
 			</Text>
 		),
 	},
@@ -61,13 +70,16 @@ const CONTENT = [
 		title: 'Choose appropriate sleepwear ',
 		content: (
 			<Text>
-				The clothes worn to sleep can affect the quality of rest. Do not wear
-				anything made of fabric that’s too rough, scratchy, or tight. {'\n'}
+				{'\u25CF'} The clothes worn to sleep can affect the quality of rest.
 				{'\n'}
-				Also, ensure you wear appropriate clothing depending on how hot or cold it
-				is to avoid sweating.{'\n'}
-				{'\n'}It preferred to go for airy, loose and breathable fabrics that absorb
-				moisture.
+				{'\n'}
+				{'\u25CF'} Do not wear anything made of fabric that’s too rough or scratchy.
+				{'\n'}
+				{'\n'}
+				{'\u25CF'} Also, ensure you wear appropriate clothing depending on how hot
+				or cold it is to avoid sweating.{'\n'}
+				{'\n'}
+				{'\u25CF'} It preferred to go for airy, loose and breathable fabrics!
 			</Text>
 		),
 	},
