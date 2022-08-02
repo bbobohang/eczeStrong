@@ -17,11 +17,16 @@ const CONTENT = [
 		title: 'Dry occlusive dressings',
 		content: (
 			<Text>
-				Clean the area of skin that needs special attention with a soap-free,
-				unperfumed wash {'\n'}
-				{'\n'}Pat dry with a soft towel Apply an emollient ointment of choice {'\n'}
-				{'\n'}Cover with a fine, close-fitting bandage or another garment {'\n'}
-				{'\n'}Leave on for 4-6 hours
+				{'\u25CF'}Clean the area of skin that needs special attention with a
+				soap-free, unperfumed wash {'\n'}
+				{'\n'}
+				{'\u25CF'}Pat dry with a soft towel Apply an emollient ointment of choice{' '}
+				{'\n'}
+				{'\n'}
+				{'\u25CF'}Cover with a fine, close-fitting bandage or another garment
+				{'\n'}
+				{'\n'}
+				{'\u25CF'}Leave on for 4-6 hours
 			</Text>
 		),
 	},

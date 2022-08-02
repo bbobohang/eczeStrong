@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import RelatedMedPage from './Cost/RelatedMedPage';
+import RelatedMedLanding from './RelatedMedLanding';
 const CostPage = ({ navigation }) => {
 	return (
 		<View style={{ flex: 1, padding: 15, backgroundColor: 'white' }}>
-			<RelatedMedPage />
+			<RelatedMedLanding navigation={navigation} />
 		</View>
 	);
 };

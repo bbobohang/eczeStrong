@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
 		textAlign: 'center',
 		fontFamily: 'sans-serif',
 		color: '#BFCFC8',
-		fontWeight: 'light',
+		fontWeight: '100',
 	},
 	image: {
 		flex: 1,

@@ -9,6 +9,7 @@ import AdditionalSupport from './screens/Home/AdditionalSupport';
 
 import RelatedMedPage from './screens/Home/Cost/RelatedMedPage';
 import OtherAdvicesPage from './screens/Home/Cost/OtherAdvicesPage';
+import RelatedMedLanding from './screens/Home/RelatedMedLanding';
 
 import Bathing from './screens/Home/Advices/Bathing';
 import Register from './screens/Auth/Register';
@@ -34,7 +35,7 @@ const HomeScreenNavigator = () => {
 			id='HomeScreenNavigator'
 		>
 			<Stack.Screen
-				name='Home'
+				name='HomeStack'
 				component={Home}
 				options={{ headerShown: false }}
 			/>
@@ -67,6 +68,7 @@ const HomeScreenNavigator = () => {
 				}}
 			/>
 			<Stack.Screen name='RelatedMedPage' component={RelatedMedPage} />
+			<Stack.Screen name='RelatedMedLanding' component={RelatedMedLanding} />
 			<Stack.Screen name='OtherAdvicesPage' component={OtherAdvicesPage} />
 			<Stack.Screen name='Bathing' component={Bathing} />
 			<Stack.Screen name='Laundry' component={Laundry} />

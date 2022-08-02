@@ -1,22 +1,46 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
+import {
+	View,
+	Text,
+	ScrollView,
+	Image,
+	StyleSheet,
+	TouchableOpacity,
+} from 'react-native';
 import { MED } from '../../../data/relatedMed';
+import { Linking } from 'react-native';
 
 const RelatedMedPage = () => {
 	return (
 		<ScrollView>
-			<View style={{ flex: 1, flexDirection: 'column' }}>
+			<View
+				style={{
+					flex: 1,
+					flexDirection: 'column',
+					padding: 15,
+					backgroundColor: 'white',
+				}}
+			>
 				{MED.map((item, index) => (
 					<View key={index} style={{ height: 550, padding: 20 }}>
-						<View
+						<TouchableOpacity
 							style={{
 								flex: 1,
 								borderWidth: 1,
 								borderRadius: 20,
 								borderColor: '#a9a9a9',
 							}}
+							onPress={() => Linking.openURL(item.url)}
 						>
-							<View style={{ flex: 3, padding: 20 }}>
+							<View
+								style={{
+									flex: 3,
+									margin: 20,
+									borderWidth: 1,
+									borderRadius: 10,
+									borderColor: '#a9a9a9',
+								}}
+							>
 								<Image source={item.imgSrc} style={styles.img} />
 							</View>
 							<Text style={styles.title}>{item.title}</Text>
@@ -40,7 +64,7 @@ const RelatedMedPage = () => {
 									<Text style={styles.cost}>{item.cost}</Text>
 								</View>
 							</View>
-						</View>
+						</TouchableOpacity>
 					</View>
 				))}
 			</View>

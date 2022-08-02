@@ -17,10 +17,11 @@ const CONTENT = [
 		title: 'Always run new clothes through the wash',
 		content: (
 			<Text>
-				Many new clothing articles have finishing sprays and chemicals that can be
-				highly irritating! {'\n'}
-				{'\n'}Play it safe by washing new clothing with a double rinse cycle before
-				wearing it!
+				{'\u25CF'}Many new clothing articles have finishing sprays and chemicals
+				that can be highly irritating! {'\n'}
+				{'\n'}
+				{'\u25CF'}Play it safe by washing new clothing with a double rinse cycle
+				before wearing it!
 			</Text>
 		),
 	},
@@ -28,9 +29,10 @@ const CONTENT = [
 		title: 'Do not overload the machine! ',
 		content: (
 			<Text>
-				Loading the washer with the right amount of clothing can allow the laundry
-				detergent to dissolve evenly. {'\n'}
-				{'\n'}This would prevent ineffective cleaning or even having residual
+				{'\u25CF'}Loading the washer with the right amount of clothing can allow the
+				laundry detergent to dissolve evenly. {'\n'}
+				{'\n'}
+				{'\u25CF'}This would prevent ineffective cleaning or even having residual
 				detergent on the clothing, which would become a potential flare-ups
 			</Text>
 		),
@@ -39,8 +41,8 @@ const CONTENT = [
 		title: 'Let the rinse cycle run',
 		content: (
 			<Text>
-				Let the detergents rinse away from your clothes to avoid potential contact
-				with your skin. You can even consider double-rinse if required!
+				{'\u25CF'}Let the detergents rinse away from your clothes to avoid potential
+				contact with your skin. You can even consider double-rinse if required!
 			</Text>
 		),
 	},
@@ -48,9 +50,10 @@ const CONTENT = [
 		title: 'Skip fabric softeners and dryer sheets ',
 		content: (
 			<Text>
-				Fabric softener and dry sheets are usually fragranced, and this could
-				trigger eczema. {'\n'}
+				{'\u25CF'}Fabric softener and dry sheets are usually fragranced, and this
+				could trigger eczema. {'\n'}
 				{'\n'}
+				{'\u25CF'}
 				Moreover, these products introduce more chemicals that could potentially be
 				allergic to.
 			</Text>
@@ -106,7 +109,6 @@ export default class Laundry extends Component {
 			<View style={styles.container}>
 				<ScrollView contentContainerStyle={{ paddingTop: 30 }}>
 					<Text style={styles.title}>Laundry Practices</Text>
-
 					<View style={{ height: 200 }}>
 						<Image
 							source={require('../../../assets/laundry.jpg')}
@@ -114,7 +116,6 @@ export default class Laundry extends Component {
 							resizeMode='contain'
 						/>
 					</View>
-
 					<Text style={styles.content}>
 						“ A little trial and error may be necessary to learn what works best for
 						your skin! Follow these tips to make sure you are doing your laundry
@@ -133,6 +134,13 @@ export default class Laundry extends Component {
 						onChange={this.setSections}
 						renderAsFlatList={false}
 					/>
+					<View style={{ height: 500, padding: 20 }}>
+						<Image
+							source={require('../../../assets/laundry.png')}
+							style={styles.image}
+							resizeMode='contain'
+						/>
+					</View>
 				</ScrollView>
 			</View>
 		);

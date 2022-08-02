@@ -26,39 +26,37 @@ const CONTENT = [
 			>
 				<View style={{ alignItems: 'flex-start' }}>
 					<Text>
-						{'\u2022'}Bath in warm water and not hot or cold water{'\n'}
-						{'\uFE63'}Hot water can increase the itch response{'\n'}
+						{'\u25CF'} Bath in warm water and not hot or cold water → Hot water can
+						increase the itch response {'\n'}
 					</Text>
 				</View>
 				<View style={{}}>
 					<Text>
-						{'\u2022'}Limit the bath to 5 or 10 minutes{'\n'}
-						{'\uFE63'}Bathing for too long can dry out the skin, making dry, cracked
-						skin worse{'\n'}
+						{'\u25CF'} Limit the bath to 5 or 10 minutes → Bathing for too long can
+						dry out the skin, making the skin worse
 					</Text>
 				</View>
 				<View>
 					<Text>
-						{'\u2022'}Use a mild and fragrance-free cleanser{'\n'}
+						{'\u25CF'} Use a mild and fragrance-free cleanser{'\n'}
 					</Text>
 				</View>
 				<View>
 					<Text>
-						{'\u2022'}Do not use bubble bath{'\n'}
-						{'\uFE63'}Soaps and detergents are also known to trigger AD flares {'\n'}
-						{'\uFE63'}Hair should not be washed in the bath, and a shampoo that is
-						unperfumed and suitable for eczema patients should be used {'\n'}
+						{'\u25CF'}Do not use bubble bath → Soaps and detergents are also known to
+						trigger AD flares. A shampoo that is unperfumed and suitable for eczema
+						patients should be used {'\n'}
 					</Text>
 				</View>
 				<View>
 					<Text>
-						{'\u2022'}After bathing, gently pat skin dry{'\n'}
-						{'\uFE63'}Be gentle when blotting the skin dry with a towel {'\n'}
+						{'\u25CF'} After bathing, gently pat skin dry → Be gentle when blotting
+						the skin dry with a towel {'\n'}
 					</Text>
 				</View>
 				<View>
 					<Text>
-						{'\u2022'}Apply moisturiser and medicine when the skin is almost dry{' '}
+						{'\u25CF'} Apply moisturizer and medicine when the skin is almost dry
 						{'\n'}
 					</Text>
 				</View>
@@ -88,16 +86,16 @@ const CONTENT = [
 					<Text>
 						<Text>
 							Instructions: {'\n'}
-							{'\u2022'} Take a bath using lukewarm water for 5-10 minutes. Use a
+							{'\u25CF'} Take a bath using lukewarm water for 5-10 minutes. Use a
 							gentle cleanser and avoid scrubbing the affected skin.{'\n'}
-							{'\u2022'} After bathing, pat the skin lightly with a towel leaving it
+							{'\u25CF'} After bathing, pat the skin lightly with a towel leaving it
 							slightly damp{'\n'}
-							{'\u2022'} Apply topical medication to the affected areas of skin as
+							{'\u25CF'} Apply topical medication to the affected areas of skin as
 							directed{'\n'}
-							{'\u2022'} Within 3 minutes, liberally apply a moisturizer all over the
+							{'\u25CF'} Within 3 minutes, liberally apply a moisturizer all over the
 							body. It is important to apply the moisturizer within 3 minutes or the
 							skin may become even drier{'\n'}
-							{'\u2022'} Wait a few minutes to let the moisturizer absorb into the skin
+							{'\u25CF'} Wait a few minutes to let the moisturizer absorb into the skin
 							before dressing or applying wet wraps.{'\n'}
 						</Text>
 					</Text>

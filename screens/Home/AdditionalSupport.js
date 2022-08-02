@@ -18,10 +18,14 @@ const CONTENT = [
 		title: 'Embrace the condition!',
 		content: (
 			<Text>
-				Acceptance is the first step! It is essential to be honest with yourself,
-				recognising that you have eczema and fully accepting it may take a few
-				months or even years. However, this acknowledgement helps you to be
-				realistic about what it means for your physical and metal health!
+				{'\u25CF'}Acceptance is the first step!{'\n'}
+				{'\n'}
+				{'\u25CF'}It is essential to be honest with yourself, recognising that you
+				have eczema and fully accepting it may take a few months or even years.{' '}
+				{'\n'}
+				{'\n'}
+				{'\u25CF'}However, this acknowledgement helps you to be realistic about what
+				it means for your physical and mental health!
 			</Text>
 		),
 	},
@@ -29,7 +33,6 @@ const CONTENT = [
 		title: 'Connect with others who have eczema ',
 		content: (
 			<Text>
-				Eczema can feel isolating, but it’s one of the most typical skin conditions.
 				Connecting with others, such as through online support groups can help to
 				boost self-esteem, reduce feelings of isolation and learn new ways to cope
 				with living with eczema {'\n'}
@@ -42,11 +45,16 @@ const CONTENT = [
 		title: 'Exercising',
 		content: (
 			<Text>
-				Exercise is one of the most effective ways to tackle stress, anxiety,
-				depression and other negative emotions. Whether you prefer walking, running
-				or swimming. Exercise is believed to dramatically improve your mood.
-				However, if sweat is a trigger for your eczema, remember to take a cool or
-				lukewarm shower coon after your workout and change clothes!
+				{'\u25CF'}Exercise is one of the most effective ways to tackle stress,
+				anxiety, depression and other negative emotions.
+				{'\n'}
+				{'\n'}
+				{'\u25CF'}Whether you prefer walking, running or swimming. Exercise is
+				believed to dramatically improve your mood.
+				{'\n'}
+				{'\n'}
+				{'\u25CF'}However, if sweat is a trigger for your eczema, remember to take a
+				cool or lukewarm shower coon after your workout and change clothes!
 			</Text>
 		),
 	},
@@ -54,17 +62,58 @@ const CONTENT = [
 		title: 'Refer to a mental health counsellor ',
 		content: (
 			<Text>
-				Never hesitate to refer to external help If you are unable to handle the
-				stress or manage the symptoms alone. Sometimes an experienced and
-				sympathetic ear is just what’s needed to bring mental balance back into
-				place! A counsellor can provide insights that will make the experience much
-				more tolerable. {'\n'}
+				{'\u25CF'}Never hesitate to refer to external help If you are unable to
+				handle the stress or manage the symptoms alone.
 				{'\n'}
+				{'\n'}
+				{'\u25CF'}Sometimes an experienced and sympathetic ear is just what’s needed
+				to bring mental balance back into place!
+				{'\n'}
+				{'\n'}
+				{'\u25CF'}A counselor can provide insights that will make the experience
+				much more tolerable.
 			</Text>
 		),
 	},
+	{
+		title: 'Mindline.Sg',
+		content: (
+			<View style={{ width: 350, justifyContent: 'center', alignItems: 'center' }}>
+				<Text>
+					{'\u25CF'}Feeling stressed out by the condition? Not sure on how to take
+					the first step?
+					{'\n'}
+					{'\n'}
+					{'\u25CF'}Fret not! Scan this QR code to be directed to a local digital
+					stress management platform that aims to empower and equip individuals with
+					knowledge and tools to self-care!
+				</Text>
+				<Image
+					source={require('../../assets/qr.png')}
+					style={{ height: 150, width: 150, marginTop: 20, marginBottom: 20 }}
+					resizeMode='contain'
+				/>
+				<Text
+					style={{
+						width: 350,
+						justifyContent: 'center',
+						alignItems: 'center',
+						textAlign: 'center',
+						fontSize: 18,
+						fontWeight: '600',
+					}}
+				>
+					Key feature to try out!
+				</Text>
+				<Text style={{ marginTop: 5, textAlign: 'justify' }}>
+					Platform to chat with Wysa, an emotionally intelligent AI chatbot, and be
+					prompted with suitable self-care exercises to complete based on your
+					emotional well being through the conversation!
+				</Text>
+			</View>
+		),
+	},
 ];
-
 export default class AdditionalSupport extends Component {
 	state = {
 		activeSections: [],
@@ -116,9 +165,7 @@ export default class AdditionalSupport extends Component {
 					<Text style={styles.content}>
 						From the red, rash-like appearance to the torturous itch and sleepless
 						night. Living with eczema can be downright challenging on our emotional
-						well-being. Anxiety and stress are common triggers that cause eczema to
-						flare up, creating more anxiety and stress. This then again leads to more
-						flare-ups. Therefore, here are some helpful tips and advice for you to
+						well-being. Therefore, here are some helpful tips and advice for you to
 						break this vicious cycle!
 					</Text>
 
@@ -134,31 +181,6 @@ export default class AdditionalSupport extends Component {
 						onChange={this.setSections}
 						renderAsFlatList={false}
 					/>
-					<Text
-						style={{
-							textAlign: 'center',
-							padding: 20,
-							marginTop: 20,
-							fontSize: 22,
-							fontWeight: '300',
-						}}
-					>
-						Scan this QR to find out more about the counselling centres and helplines!
-					</Text>
-					<View
-						style={{
-							alignItems: 'center',
-							height: 150,
-							justifyContent: 'center',
-							marginBottom: 30,
-						}}
-					>
-						<Image
-							source={require('../../assets/qr.png')}
-							style={{ height: 150, width: 150 }}
-							resizeMode='contain'
-						/>
-					</View>
 				</ScrollView>
 			</View>
 		);

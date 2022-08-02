@@ -15,8 +15,14 @@ import Accordion from 'react-native-collapsible/Accordion';
 const CONTENT = [
 	{
 		title: 'Take charge of conversations',
-		content:
-			'Make decisions to talk to new people and enter into conversations even when you are nervous or shy. This will get easier, and you will eventually start improving your social skills. ',
+		content: (
+			<Text>
+				Make decisions to talk to new people and enter into conversations even when
+				you are nervous or shy. {'\n'}
+				{'\n'}This will get easier, and you will eventually start improving your
+				social skills.
+			</Text>
+		),
 	},
 	{
 		title: 'Ask open-ended questions',
@@ -25,18 +31,78 @@ const CONTENT = [
 	},
 	{
 		title: 'Improve your emotional intelligence',
-		content:
-			'“Put yourself in their shoes”! Imagine what they might be going through and try to understand their feelings. This will help to better understand their perspective and eventually help you to respond appropriately.',
+		content: (
+			<View>
+				<View
+					style={{
+						alignItems: 'center',
+						justifyContent: 'center',
+						width: 350,
+						marginBottom: 20,
+					}}
+				>
+					<Text style={{ borderWidth: 1, borderRadius: 10, padding: 10 }}>
+						“Put yourself in their shoes”!{' '}
+					</Text>
+				</View>
+				<Text style={{ width: 350 }}>
+					Imagine what they might be going through and try to understand their
+					feelings.
+					{'\n'}
+					{'\n'}
+					This will help to better understand their perspective and help you to
+					respond appropriately.
+				</Text>
+			</View>
+		),
 	},
 	{
 		title: 'Encourage others to talk about themselves',
-		content:
-			'Most people really enjoy talking about themselves. Ask questions about a person’s lifestyle, such as career, hobbies, or family. Show interest in hearing what is being said!',
+		content: (
+			<View>
+				<Text style={{ width: 350 }}>
+					Most people really enjoy talking about themselves.
+					{'\n'}
+					{'\n'}
+					Ask questions about a person’s lifestyle, such as career, hobbies, or
+					family.
+				</Text>
+				<View
+					style={{
+						alignItems: 'center',
+						justifyContent: 'center',
+						width: 350,
+					}}
+				>
+					<Text style={{ borderWidth: 1, borderRadius: 10, padding: 10 }}>
+						Show interest in hearing what is being said!{' '}
+					</Text>
+				</View>
+			</View>
+		),
 	},
 	{
 		title: 'Identify and replace negative thoughts',
-		content:
-			'Identify negative thoughts that are likely to drag you down and replace them with more realistic ones. Don’t allow yourself to dwell on thoughts that are not productive!. ',
+		content: (
+			<View>
+				<Text style={{ width: 350 }}>
+					Identify negative thoughts that are likely to drag you down and replace
+					them with more realistic ones.
+				</Text>
+				<View
+					style={{
+						alignItems: 'center',
+						justifyContent: 'center',
+						width: 350,
+						marginTop: 20,
+					}}
+				>
+					<Text style={{ borderWidth: 1, borderRadius: 10, padding: 10 }}>
+						Don’t allow yourself to dwell on thoughts that are not productive!{' '}
+					</Text>
+				</View>
+			</View>
+		),
 	},
 ];
 
@@ -105,23 +171,19 @@ export default class LivingPage extends Component {
 								useNativeDriver
 								style={{ textAlign: 'justify' }}
 							>
-								Social skills are verbal and nonverbal tools used to communicate,
-								interact and build healthy relationships. It is often defined as a set
-								of behaviours allowing an individual to relate to others effectively and
-								satisfactorily. This includes forming and fostering relationships,
-								explaining, communicating, active listening, networking and many more.{' '}
+								Social skills are verbal and nonverbal tools used to interact and build
+								healthy relationships. It is often defined as a set of behaviors
+								allowing an individual to relate to others effectively. This includes
+								forming and fostering relationships, communicating, active listening and
+								many more.
 								{'\n'}
-								{'\n'}One interesting aspect about social skills is that they can be
-								learned, strengthened, and developed daily with practice! {'\n'}
 								{'\n'}
-								“Social skills are a fundamental pillar in any scenario.” - Professor
-								David Deming, doctor in education and economics, Harvard University.
+								One interesting aspect about social skills is that they can be learned,
+								strengthened, and developed daily with practice!
 							</Animatable.Text>
-							<View
-								style={{ backgroundColor: 'black', width: '100px', height: '100px' }}
-							/>
 						</View>
 					</Collapsible>
+
 					<View
 						style={{
 							justifyContent: 'center',
@@ -133,7 +195,6 @@ export default class LivingPage extends Component {
 							Advices on what you can do
 						</Text>
 					</View>
-
 					<Accordion
 						align='bottom'
 						activeSections={activeSections}

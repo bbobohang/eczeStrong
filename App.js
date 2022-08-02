@@ -29,7 +29,7 @@ export default function App() {
 				}}
 			>
 				<Tab.Screen
-					name='Home'
+					name='HomeNav'
 					component={HomeScreenNavigator}
 					options={{
 						tabBarLabel: 'Home',
