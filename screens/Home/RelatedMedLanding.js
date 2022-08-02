@@ -35,7 +35,7 @@ export default class RelatedMedLanding extends Component {
 						There is a wide range of creams and lotions for treating atopic dermatitis
 						symptoms on the market. Therefore, choosing the right product to help
 						becomes really confusing. {'\n'}
-						{'\n'} On a simple note, you have to find the one that works best in
+						{'\n'}On a simple note, you have to find the one that works best in
 						treating YOUR eczema. {'\n'}
 						{'\n'}Here are some recommended below 25$ over-the-counter products with
 						special offers! What are you waiting for?
