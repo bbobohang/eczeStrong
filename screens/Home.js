@@ -31,7 +31,7 @@ export default function Home({ navigation }) {
 					<Text
 						style={{ fontSize: 32, fontWeight: '700', fontFamily: 'sans-serif' }}
 					>
-						Choose the areas
+						Content Page
 					</Text>
 				</View>
 				<View style={{ flex: 1, paddingLeft: 20 }}>
@@ -42,7 +42,7 @@ export default function Home({ navigation }) {
 							fontWeight: '100',
 						}}
 					>
-						you want to improve on
+						Click "GO" to learn more!
 					</Text>
 				</View>
 			</View>

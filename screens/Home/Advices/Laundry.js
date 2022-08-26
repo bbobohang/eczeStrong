@@ -109,19 +109,14 @@ export default class Laundry extends Component {
 			<View style={styles.container}>
 				<ScrollView contentContainerStyle={{ paddingTop: 30 }}>
 					<Text style={styles.title}>Laundry Practices</Text>
-					<View style={{ height: 200 }}>
+
+					<View style={{ height: 500, padding: 20 }}>
 						<Image
-							source={require('../../../assets/laundry.jpg')}
+							source={require('../../../assets/laundry.png')}
 							style={styles.image}
 							resizeMode='contain'
 						/>
 					</View>
-					<Text style={styles.content}>
-						“ A little trial and error may be necessary to learn what works best for
-						your skin! Follow these tips to make sure you are doing your laundry
-						practices in an eczema-friendly way!”
-					</Text>
-
 					<Accordion
 						align='bottom'
 						activeSections={activeSections}
@@ -134,13 +129,6 @@ export default class Laundry extends Component {
 						onChange={this.setSections}
 						renderAsFlatList={false}
 					/>
-					<View style={{ height: 500, padding: 20 }}>
-						<Image
-							source={require('../../../assets/laundry.png')}
-							style={styles.image}
-							resizeMode='contain'
-						/>
-					</View>
 				</ScrollView>
 			</View>
 		);

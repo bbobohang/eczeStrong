@@ -85,16 +85,23 @@ const CONTENT = [
 				<View>
 					<Text>
 						<Text>
-							Instructions: {'\n'}
-							{'\u25CF'} Take a bath using lukewarm water for 5-10 minutes. Use a
-							gentle cleanser and avoid scrubbing the affected skin.{'\n'}
+							Instructions:
+							{'\n'}
+							{'\u25CF'} Take a bath using lukewarm water for 5-10 minutes. {'\n'}
+							{'\n'}
+							{'\u25CF'}Use a gentle cleanser and avoid scrubbing the affected skin.
+							{'\n'}
+							{'\n'}
 							{'\u25CF'} After bathing, pat the skin lightly with a towel leaving it
 							slightly damp{'\n'}
+							{'\n'}
 							{'\u25CF'} Apply topical medication to the affected areas of skin as
 							directed{'\n'}
+							{'\n'}
 							{'\u25CF'} Within 3 minutes, liberally apply a moisturizer all over the
 							body. It is important to apply the moisturizer within 3 minutes or the
 							skin may become even drier{'\n'}
+							{'\n'}
 							{'\u25CF'} Wait a few minutes to let the moisturizer absorb into the skin
 							before dressing or applying wet wraps.{'\n'}
 						</Text>

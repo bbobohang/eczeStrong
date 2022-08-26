@@ -50,8 +50,9 @@ const CONTENT = [
 		title: 'Practice good sleep hygiene',
 		content: (
 			<Text>
-				{'\u25CF'} Stick to regular bedtime and wake-up time every day. This trains
-				your body to go to sleep and stay asleep smoothing. {'\n'}
+				{'\u25CF'} Be consistent. Go to bed the same time each night and get up at
+				the same time each morning. This trains your body to adapt to the sleeping
+				schedule and hence falling asleep easier. {'\n'}
 				{'\n'}
 				{'\u25CF'} Engage in relaxation techniques about an hour before going to
 				bed.{'\n'}

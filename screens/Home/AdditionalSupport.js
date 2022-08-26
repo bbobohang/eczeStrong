@@ -164,9 +164,9 @@ export default class AdditionalSupport extends Component {
 					<Text style={styles.title}>Additional Support</Text>
 					<Text style={styles.content}>
 						From the red, rash-like appearance to the torturous itch and sleepless
-						night. Living with eczema can be downright challenging on our emotional
-						well-being. Therefore, here are some helpful tips and advice for you to
-						break this vicious cycle!
+						night. Living with eczema can be downright challenging on our own mental
+						and emotional well-being. Therefore, here are some helpful tips and advice
+						for you to break this vicious cycle!
 					</Text>
 
 					<Accordion

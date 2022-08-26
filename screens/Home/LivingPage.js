@@ -74,7 +74,9 @@ const CONTENT = [
 						width: 350,
 					}}
 				>
-					<Text style={{ borderWidth: 1, borderRadius: 10, padding: 10 }}>
+					<Text
+						style={{ borderWidth: 1, borderRadius: 10, padding: 10, marginTop: 10 }}
+					>
 						Show interest in hearing what is being said!{' '}
 					</Text>
 				</View>
@@ -158,6 +160,20 @@ export default class LivingPage extends Component {
 						This platform is to help improve the social behaviour of the sufferers by
 						providing opportunities for them to interact with one another!
 					</Text>
+					<View style={{ padding: 15, paddingTop: 0, paddingBottom: 40 }}>
+						<Text
+							style={{
+								borderWidth: 1,
+								borderRadius: 10,
+								padding: 10,
+								textAlign: 'justify',
+							}}
+						>
+							Social behaviour is closely related to the social skills. It is important
+							to fully understand and improve on an individual's social skills in order
+							to demonstrate proper social behaviour!
+						</Text>
+					</View>
 					<TouchableOpacity onPress={this.toggleExpanded}>
 						<View style={styles.header}>
 							<Text style={styles.headerText}>Definition of Social Skills</Text>
